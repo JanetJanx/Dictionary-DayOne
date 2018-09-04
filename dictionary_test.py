@@ -5,7 +5,10 @@ from dictionary import dictinary
 class DictTest(unittest.TestCase):
 
     def test_dictinary(self):
-        self.assertEqual(dictinary(3,8), {3: 9, 4: 16, 5: 25, 6: 36, 7: 49})
+        generated_dictionary = dictinary(3,8)
+        """test whether each value is the square of each key."""
+        for key, value in generated_dictionary.iteritems():
+            self.assertEquals(generated_dictionary[key], key**2)
     
     def test_dictinary_string(self):
         self.assertEqual(dictinary('d',8), "Please use numbers(integers)")
