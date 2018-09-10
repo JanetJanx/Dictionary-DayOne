@@ -9,4 +9,4 @@ def dictinary(a,b):
     return "Please use numbers(integers)"
 
 #print the generated dictinary
-print(dictinary(4,15))
+print(dictinary(2,15))
