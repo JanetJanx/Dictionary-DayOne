@@ -1,6 +1,6 @@
 import unittest
 
-from dictionary import dictinary
+from app.dictionary import dictinary
 
 class DictTest(unittest.TestCase):
 
